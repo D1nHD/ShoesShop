@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="Loginn.NewBalance"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Loginn"
+             mc:Ignorable="d" 
+             d:DesignHeight="450"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto"
+             FontFamily="Segoe UI Emoji">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Segoe UI Emoji" FontWeight="Bold" FontSize="15" Text="New Balance 574S" Foreground="Black"/>
+                        <Image Source="C:\Users\D1nHD\Desktop\Shop\shoesShop\Loginn\assets\shoes\New_Balance_574S\New_Balance_574S_1.jpg" Width="200" Height="150" Stretch="Uniform" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="40">
+                            History of New Balance begins in 1906 in the USA in the city of Belmont, where the 33-year-old emigrant from England William Riley establishes a laboratory for the development and production of corrective devices.                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$ 125" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Detailed" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click"  />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Segoe UI Emoji" FontWeight="Bold" FontSize="15" Text="New Balance 997S" Foreground="Black"/>
+                        <Image Source="C:\Users\D1nHD\Desktop\Shop\shoesShop\Loginn\assets\shoes\New_Balance_997S\New_Balance_997S_1.jpg" Width="200" Height="150" Stretch="Uniform" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="40">
+                            History of New Balance begins in 1906 in the USA in the city of Belmont, where the 33-year-old emigrant from England William Riley establishes a laboratory for the development and production of corrective devices.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$ 147" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Detailed" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click_1"  />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Segoe UI Emoji" FontWeight="Bold" FontSize="15" Text="New Balance 997" Foreground="Black"/>
+                        <Image Source="C:\Users\D1nHD\Desktop\Shop\shoesShop\Loginn\assets\shoes\New_Balance_997\New_Balance_997_1.jpg" Width="200" Height="150" Stretch="Uniform" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="40">
+                            History of New Balance begins in 1906 in the USA in the city of Belmont, where the 33-year-old emigrant from England William Riley establishes a laboratory for the development and production of corrective devices.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$ 120" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Detailed" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click_2" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

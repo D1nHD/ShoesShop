@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="Loginn.Tovar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Loginn"
+             mc:Ignorable="d" 
+             d:DesignHeight="450"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto"
+             FontFamily="Segoe UI Emoji"
+             >
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Segoe UI Emoji" FontWeight="Bold" FontSize="15" Text="Adidas Tubular" Foreground="Black"/>
+                        <Image Source="assets\shoes\Adidas Tubular\Adidas Tubular1.jpg" Width="200" Height="150" Stretch="Uniform" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+                            Sneakers or sports shoes? Model Adidas Tubular Invader Strap BB8943 belongs to the limited brand collection, is a chic shoe for spring and autumn cool days.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$ 95.49" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Detailed" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click_1"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Segoe UI Emoji" FontWeight="Bold" FontSize="15" Text="Adidas Prophere" Foreground="Black"/>
+                        <Image Source="assets\shoes\Adidas Prophere\Adidas Prophere1.jpg" Width="200" Height="150" Stretch="Uniform" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+Adidas is a cult, a world-famous brand, a German industrial concern specializing in the production of sports shoes, clothing, bags, watches, glasses, inventory and other sports related items.                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$ 122" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Detailed" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Segoe UI Emoji" FontWeight="Bold" FontSize="15" Text="Adidas Originals Crazy" Foreground="Black"/>
+                        <Image Source="assets\shoes\Adidas Originals Crazy\Adidas Originals Crazy1.jpg" Width="200" Height="150" Stretch="Uniform" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+                            The Crazy 1 series started in 2000. Meet another interpretation of the famous sneakers, in which the manufacturer used a high quality leather, an inner liner of neoprene for the most comfortable.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$ 114" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Detailed" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click_2"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

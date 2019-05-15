@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="Loginn.Nike"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Loginn"
+             mc:Ignorable="d" 
+             d:DesignHeight="450"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto"
+             FontFamily="Segoe UI Emoji">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Segoe UI Emoji" FontWeight="Bold" FontSize="15" Text="Nike Air Max Axis" Foreground="Black"/>
+                        <Image Source="assets\shoes\Nike_Air_Max\Nike_Air_Max1.jpg" Width="200" Height="150" Stretch="Uniform" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="38">
+                            The style of the Nike Air Max Axis crossover crosses to the bigovye models of the 90s. Ale, spiraling on a minute, stinked in Maybutn.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$ 116" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Detailed" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Segoe UI Emoji" FontWeight="Bold" FontSize="15" Text="Nike Air Max Axis Prem" Foreground="Black"/>
+                        <Image Source="assets\shoes\Nike_Air_Max_Prem\Nike_Air_Max_Axis_Prem1.jpg" Width="200" Height="150" Stretch="Uniform" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="39">
+                            The style of the Nike Air Max Axis Prem crossover crosses to the bigovye models of the 90s. Ale, spiraling on a minute, stinked in Maybutn.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$ 147" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Detailed" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click_1" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Segoe UI Emoji" FontWeight="Bold" FontSize="15" Text="Nike Flight Bonafide" Foreground="Black"/>
+                        <Image Source="C:\Users\D1nHD\Desktop\Shop\shoesShop\Loginn\assets\shoes\Nike_Flight_Bonafide\Nike_Flight_Bonafide1.jpg" Width="200" Height="150" Stretch="Uniform" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+                               The most comfortable, stylish, cool shoes of the future! Nike Flight Bonafide launches a new era of sports shoes. The top of the model is completely textile, without the tongue and laces.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$ 120" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Detailed" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click_2"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>
